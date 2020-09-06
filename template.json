@@ -18,23 +18,29 @@
       "type": "string",
       "defaultValue": "[resourceGroup().location]"
     },
-    "spname": {
-      "type": "string"
+    "planName": {
+      "type": "string",
+      "defaultValue": "sp-pedro-2"
     },
-    "spnumberOfWorkers": {
-      "type": "string"
+    "planNumberOfWorkers": {
+      "type": "string",
+      "defaultValue": "sp-pedro-2"
     },
-    "spsku": {
-      "type": "string"
+    "planSku": {
+      "type": "string",
+      "defaultValue": "PremiumV2"
     },
-    "spskuCode": {
-      "type": "string"
+    "planSkuCode": {
+      "type": "string",
+      "defaultValue": "P1v2"
     },
-    "spworkerSize": {
-      "type": "string"
+    "planWorkerSize": {
+      "type": "string",
+      "defaultValue": "2"
     },
-    "spworkerSizeId": {
-      "type": "string"
+    "planWorkerSizeId": {
+      "type": "string",
+      "defaultValue": "2"
     },
     "resourceTags": {
       "type": "object",
@@ -66,21 +72,21 @@
     },
     {
       "apiVersion": "2018-11-01",
-      "name": "[parameters('spname')]",
+      "name": "[parameters('planName')]",
       "type": "Microsoft.Web/serverfarms",
       "location": "[parameters('location')]",
       "kind": "linux",
       "tags": "[parameters('resourceTags')]",
       "properties": {
-        "name": "[parameters('spname')]",
-        "workerSize": "[parameters('spworkerSize')]",
-        "workerSizeId": "[parameters('spworkerSizeId')]",
-        "numberOfWorkers": "[parameters('spnumberOfWorkers')]",
+        "name": "[parameters('planName')]",
+        "workerSize": "[parameters('planWorkerSize')]",
+        "workerSizeId": "[parameters('planWorkerSizeId')]",
+        "numberOfWorkers": "[parameters('planNumberOfWorkers')]",
         "reserved": true
       },
       "sku": {
-        "Tier": "[parameters('spsku')]",
-        "Name": "[parameters('spskuCode')]"
+        "Tier": "[parameters('planSku')]",
+        "Name": "[parameters('planSkuCode')]"
       }
     }
   ],

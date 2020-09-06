@@ -2,22 +2,22 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "spname": {
+    "planName": {
       "value": "pedro-sp-2"
     },
-    "spnumberOfWorkers": {
+    "planNumberOfWorkers": {
       "value": "1"
     },
-    "spsku": {
+    "planSku": {
       "value": "PremiumV2"
     },
-    "spskuCode": {
+    "planSkuCode": {
       "value": "P1v2"
     },
-    "spworkerSize": {
+    "planWorkerSize": {
       "value": "3"
     },
-    "spworkerSizeId": {
+    "planWorkerSizeId": {
       "value": "3"
     }
   }
