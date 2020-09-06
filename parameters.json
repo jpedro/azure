@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "spname": {
+      "value": "pedro-sp-2"
+    },
+    "spnumberOfWorkers": {
+      "value": "1"
+    },
+    "spsku": {
+      "value": "PremiumV2"
+    },
+    "spskuCode": {
+      "value": "P1v2"
+    },
+    "spworkerSize": {
+      "value": "3"
+    },
+    "spworkerSizeId": {
+      "value": "3"
+    }
+  }
+}

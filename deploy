@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -eu
+
+az deployment group create \
+  --name TEST \
+  --template-file template.json \
+  --parameters parameters.json
